@@ -1,0 +1,77 @@
+.section-main {
+	padding: 0 0 rem(50px);
+
+	.main-post-item {
+		margin-bottom: rem(30px);
+
+		@include media('>=desktop') {
+			margin-bottom: rem(60px);
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: $main-color;
+		}
+
+		.visual {
+			border-radius: rem(5px);
+			overflow: hidden;
+		}
+
+		.text {
+			position: relative;
+			padding: rem(10px);
+			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+			background-color: #fff;
+
+			@include media('>=tablet') {
+				padding: rem(20px);
+			}
+
+			@include media('>=desktop') {
+				margin: rem(-120px) rem(20px) 0;
+				padding: rem(30px) rem(50px) rem(30px) rem(30px);
+			}
+
+			.label {
+				margin-bottom: rem(15px);
+			}
+
+			.author {
+				margin-bottom: rem(5px);
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.pagination {
+		margin: 0 rem(-5px) rem(50px);
+
+		.page-item {
+			padding: 0 rem(5px);
+		}
+
+	}
+
+	.page-link {
+		padding: rem(10px);
+		border-radius: 3px;
+		color: $black;
+		border: 1px solid $border-input-color;
+
+		@include media('>=tablet') {
+			padding: rem(10px) rem(15px);
+		}
+
+		&.active-page {
+			background-color: #000;
+			color: #fff;
+		}
+
+	}
+}

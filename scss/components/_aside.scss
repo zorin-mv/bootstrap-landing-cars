@@ -1,0 +1,139 @@
+aside {
+
+	.single-post {
+		margin-bottom: rem(30px);
+
+		@include media('>=desktop') {
+			margin-bottom: rem(45px);
+		}
+
+		.visual {
+			margin-bottom: rem(15px);
+			border-radius: rem(5px);
+			overflow: hidden;
+		}
+
+		.text {
+			margin-bottom: rem(20px);
+
+			h4 {
+				margin-bottom: rem(5px);
+			}
+
+			.author {
+				font-style: italic;
+				margin-bottom: rem(10px);
+			}
+		}
+	}
+
+	.popular-posts {
+		margin-bottom: rem(30px);
+
+		@include media('>=desktop') {
+			margin-bottom: rem(45px);
+		}
+
+		h4 {
+			margin-bottom: rem(20px);
+		}
+	}
+
+	.inst {
+		margin-bottom: rem(30px);
+
+		@include media('>=desktop') {
+			margin-bottom: rem(45px);
+		}
+
+		h4 {
+			margin-bottom: rem(20px);
+		}
+
+		.row {
+			margin: 0 rem(-5px);
+
+			.col-6 {
+				padding: 0 rem(5px);
+			}
+		}
+
+		.inst-item {
+			margin-bottom: rem(10px);
+
+			.visual {
+				border-radius: rem(5px);
+				overflow: hidden;
+			}
+		}
+
+		.btn {
+
+			&:hover {
+				.icon-inst {
+
+					&::before {
+						color: $blue;
+					}
+				}
+			}
+
+			.icon-inst {
+
+				&::before {
+					vertical-align: middle;
+					margin-right: rem(5px);
+					transition: color 0.5s;
+				}
+			}
+
+		}
+	}
+
+	.block-tags {
+		margin-bottom: rem(30px);
+
+		@include media('>=desktop') {
+			margin-bottom: rem(45px);
+		}
+
+		h4 {
+			margin-bottom: rem(20px);
+		}
+
+		.teg-items {
+			margin: 0 rem(-5px);
+
+			.tag {
+				padding: rem(5px);
+				background-color: $tag-color;
+				margin: 0 rem(5px) rem(10px);
+				border-radius: 3px;
+
+				@include media('>=tablet') {
+					padding: rem(5px) rem(6px);
+				}
+
+				@include media('>=large') {
+					padding: rem(5px) rem(13px);
+				}
+
+				a {
+					text-decoration: none;
+					color: $black;
+
+					&:hover {
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+
+	.your-contacts {
+
+		h4 {
+			margin-bottom: rem(5px);
+		}
+	}
+}

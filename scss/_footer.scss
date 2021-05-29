@@ -1,0 +1,115 @@
+footer {
+	.footer-top {
+		padding: rem(50px) 0;
+		background-color: $black;
+
+		h3 {
+			color: #fff;
+			margin-bottom: rem(20px);
+		}
+
+		.block-company {
+			.navbar-brand {
+				color: #fff;
+				margin-bottom: rem(20px);
+			}
+
+			.text {
+				color: #cecece;
+				margin-bottom: 60px;
+			}
+
+			.social {
+				margin: 0 rem(-5px) rem(30px);
+
+				li {
+					text-decoration: none;
+					padding: 0 rem(5px);
+				}
+
+				a {
+
+					&:hover {
+						i {
+							&::before {
+								color: $blue;
+							}
+						}
+					}
+
+					i {
+						position: relative;
+						display: block;
+						width: rem(30px);
+						height: rem(30px);
+						background: #373737;
+						border-radius: 3px;
+
+						&::before {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -50%);
+							transition: color 0.5s;
+						}
+					}
+				}
+			}
+		}
+
+		.recent-posts {
+
+			.posts-item {
+				margin-bottom: rem(15px);
+
+				h3 {
+					font-size: rem(15px);
+					color: #fff;
+				}
+
+				.row {
+					margin: 0 rem(-5px);
+
+					.col-6 {
+						padding: 0 rem(5px);
+					}
+				}
+			}
+		}
+
+		.block-newsletter {
+			input {
+				background-color: $bg-input;
+				border: 0;
+				border-radius: 3px;
+			}
+		}
+
+	}
+
+	.footer-bottom {
+		padding: rem(20px) 0;
+		background-color: #000;
+		color: #fff;
+
+		.navbar {
+			margin: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			transition: color 0.5s;
+
+			&:hover {
+				color: $blue;
+			}
+		}
+
+		span {
+			display: inline-block;
+			padding: 0.5rem 0;
+			line-height: 1.5;
+		}
+	}
+}

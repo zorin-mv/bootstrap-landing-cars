@@ -1,0 +1,80 @@
+header {
+	background-color: #000;
+	padding: rem(25px) 0;
+}
+
+.navbar {
+	padding: 0;
+
+	&.bg-dark {
+		background-color: transparent !important;
+	}
+
+	.navbar-nav {
+		margin: 0 auto;
+	}
+
+	.form-inline {
+		min-width: rem(114px);
+
+		.form-control {
+			display: none;
+			margin-right: rem(5px);
+
+			@include media('>=tablet') {
+				position: absolute;
+				top: 50%;
+				right: 15px;
+				transform: translateY(-50%);
+			}
+
+			&.input-active {
+				display: inline-block;
+				width: auto;
+			}
+		}
+
+		.search {
+			border: 0;
+			background: transparent;
+
+			@include media(">=tablet") {
+				margin-left: auto;
+			}
+
+			&:hover {
+				.icon-search {
+					&::before {
+						color: $blue;
+					}
+				}
+			}
+
+			.icon-search {
+				vertical-align: middle;
+
+				&::before {
+					transition: color 0.5s;
+				}
+			}
+		}
+	}
+
+	.navbar-toggler {
+		background-color: $blue;
+	}
+}
+
+.nav-link {
+	display: inline-block;
+}
+
+.navbar-brand {
+	font-family: "lato", sans-serif;
+
+	.mark {
+		padding: rem(3px) rem(5px);
+		margin-right: rem(3px);
+		font-size: rem(15px);
+	}
+}

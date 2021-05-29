@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $fz;
+}
+
+#wrapper {
+	width: 100%;
+	min-width: rem(320px);
+	position: relative;
+	overflow: hidden;
+	font-family: 'PT Sans', sans-serif;
+	color: $main-color;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+h2 {
+	font-size: rem(22px);
+	font-weight: 700;
+	line-height: 1.2;
+	color: $black;
+
+	@include media('>=tablet') {
+		font-size: rem(25px);
+	}
+}
+
+h3 {
+	font-size: rem(18px);
+	font-weight: 700;
+	line-height: 1.5;
+
+	@include media('>=tablet') {
+		font-size: rem(20px);
+	}
+}
+
+h4 {
+	font-size: rem(16px);
+	font-weight: 700;
+	line-height: 1.2;
+	color: $black;
+	margin-bottom: 0;
+
+	@include media('>=tablet') {
+		font-size: rem(18px);
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+.mark {
+	border-radius: rem(3px);
+	font-size: rem(12px);
+	color: #fff;
+	padding: rem(3px) rem(12px);
+}
+
+.card {
+	border: 0;
+}
+
+.btn {
+	background-color: $bg-btn;
+	border-radius: 3px;
+	color: #fff;
+	width: 100%;
+	padding: rem(14px);
+	transition: color 0.5s;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+.contacts-item {
+	width: 100%;
+	padding: rem(13px);
+	border: 1px solid $border-input-color;
+	border-radius: 3px;
+	margin-bottom: rem(10px);
+
+	&::placeholder {
+		color: $placeholder-color;
+	}
+}
+
+.author {
+	font-style: italic;
+}
+
+.posts-item {
+	position: relative;
+	margin-bottom: rem(30px);
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: $main-color;
+	}
+
+	.mark {
+		position: absolute;
+		top: rem(20px);
+		left: rem(20px);
+	}
+
+	.visual {
+		margin-bottom: rem(15px);
+		border-radius: rem(5px);
+		overflow: hidden;
+	}
+
+	.text {
+
+		h3 {
+			color: $black;
+			line-height: 1.4;
+		}
+	}
+}
+
+article {
+	padding-bottom: rem(50px);
+}
